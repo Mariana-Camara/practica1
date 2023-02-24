@@ -1,0 +1,138 @@
+/* Estructura CSS
+1- Narbar
+2- imagen text
+3- texto principal
+4- tablas
+5-floter
+
+/* aqui inicia la nav bar  */
+
+
+.header {
+    background: rgba(0, 0, 0, 0.7);
+    width: 99%;
+    position: fixed;
+    z-index: 100;
+}
+
+.header nav {
+    float: left;
+}
+
+.header nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.header nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.header nav ul li a {
+    display: block;
+    padding: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header nav ul li:hover {
+    background: #5d7590;
+}
+/* aqui termia la navbar */
+
+/* aqui comienza la animacion del texto */
+h1 {
+    padding-top: 220px;
+    padding-left: 50%;
+    padding-bottom: 20px;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black,
+        1px 0 black, 0 -1px black;
+
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 7rem;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-right: 0.15em solid transparent;
+    animation: typing 2s steps(7) 1s 1 normal both, blink 1s steps(1);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+/* Aqui termina la animacion del texto  */
+
+
+.card {
+    background: #fff url(../assets/depresion.png) center center/cover no-repeat local;
+    width: 100%;
+    height: 550px;
+    box-shadow: 1px solid black;
+}
+/* 
+aqui inicia el contenido principal  */
+
+
+.maincontent{
+    font-size: 18px;
+    margin-left: 3px;
+    margin-right: 8px;
+    text-align: justify;
+    list-style: inside;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.maincontent li {
+    margin-bottom: 15px;
+    margin-left: 3px;
+    margin-right: 8px;
+    text-align: justify;
+}
+
+/* aqui comienza el diseño de tablas  */
+
+.tablas  {
+    border:2px sólido #000000;
+    border-collapse:colapso;
+    padding:5px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.tablas caption {
+    text-align:Correcto;
+}
+.tablas th {
+    border:2px sólido #000000;
+    padding:5px;
+    background:#F0F0F0;
+}
+.tablas td {
+    border:2px sólido #000000;
+    text-align:centrar;
+    padding:5px;
+}
+/* aqui acaba el diseño se tablas */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
