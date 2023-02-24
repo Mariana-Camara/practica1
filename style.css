@@ -80,7 +80,7 @@ h1 {
 
 
 .card {
-    background: #fff url(../assets/depresion.png) center center/cover no-repeat local;
+    background: #fff url(./assets/depresion.png) center center/cover no-repeat local;
     width: 100%;
     height: 550px;
     box-shadow: 1px solid black;
